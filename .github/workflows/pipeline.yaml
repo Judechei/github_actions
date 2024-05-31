@@ -3,11 +3,12 @@ name: test workflow
 on:
   workflow_dispatch:
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   job1:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: first step
         run: echo "hell world"
