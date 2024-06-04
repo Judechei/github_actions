@@ -2,6 +2,12 @@ name: test workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      user-name:
+        type: string
+        description: "Pplease give us username"
+        required: true
+        default: "Jude"
   push:
     branches:
       - main
@@ -13,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first step
-        run: echo "hell world"
+        run: echo "hello ${{ github.event.inputs.user-name }}"
