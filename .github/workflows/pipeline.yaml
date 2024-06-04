@@ -32,3 +32,10 @@ jobs:
         run: |
           ls -ltr
           echo  "hello"
+
+      - uses: actions/checkout@v4
+
+      - name: listing after clone
+        run: |
+          ls -ltr
+          echo  "hello"
