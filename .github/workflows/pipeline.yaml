@@ -14,6 +14,8 @@ on:
   schedule:
     - cron: 2 * * * *
 
+run-name: Run-${{ github.event.name }}
+
 jobs:
   job1:
     runs-on: ubuntu-latest
