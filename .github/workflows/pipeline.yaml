@@ -14,7 +14,7 @@ on:
   schedule:
     - cron: 2 * * * *
 
-run-name: Run-${{ github.event.name }}
+run-name: Run-${{ github.event_name }}
 
 jobs:
   job1:
